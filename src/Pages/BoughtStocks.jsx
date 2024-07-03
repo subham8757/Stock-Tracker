@@ -6,8 +6,8 @@ function BoughtStocks(){
 
     const [data,setData]=useState((JSON.parse(localStorage.getItem("buy")))===null ? []:JSON.parse(localStorage.getItem("buy")) )
 
-
-    console.log(data)
+    setData((JSON.parse(localStorage.getItem("buy")))===null ? []:JSON.parse(localStorage.getItem("buy")))
+   
 
     return (
         <div>

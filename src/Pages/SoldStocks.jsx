@@ -5,6 +5,7 @@ function SoldStocks(){
 
     const [data,setData]=useState((JSON.parse(localStorage.getItem("sell")))===null ? []:JSON.parse(localStorage.getItem("sell")) )
 
+    setData((JSON.parse(localStorage.getItem("sell")))===null ? []:JSON.parse(localStorage.getItem("sell")))
     return (
         <div>
         <table id={style.customers}>

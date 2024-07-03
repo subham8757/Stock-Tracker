@@ -6,7 +6,7 @@ function Holdings(){
 
     const [data,setData]=useState((JSON.parse(localStorage.getItem("buy")))===null ? []:JSON.parse(localStorage.getItem("buy")) )
 
-     
+     setData((JSON.parse(localStorage.getItem("buy")))===null ? []:JSON.parse(localStorage.getItem("buy")))
     
     let sum=0;
 
